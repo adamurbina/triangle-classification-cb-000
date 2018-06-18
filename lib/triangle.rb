@@ -16,6 +16,8 @@ class Triangle
           :equilateral
       when @sides.count(@side1) == 2 || @sides.count(@side2) == 2
           :isosceles
+      else
+          :scalene
       end
   end
 
