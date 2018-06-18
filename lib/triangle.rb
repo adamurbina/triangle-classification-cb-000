@@ -10,7 +10,11 @@ class Triangle
   end
 
   def kind
-
+      case
+      when @side1 == @side2 && @side2 == @side3
+          :equilateral
+      #when @side1 == @side2 || @side2 == @side3
+      end
   end
 
   class TriangleError < StandardError
