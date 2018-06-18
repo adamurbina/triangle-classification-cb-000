@@ -14,7 +14,7 @@ class Triangle
       case
       when @sides.count {|s| s<=0 } > 0 || (@sides[0] + @sides[1] <= @sides[2])
           raise TriangleError
-      when @sides.count(@side1) == 3
+      when @sides.count(@sides[0]) == 3
           :equilateral
       when @sides.count(@sides[1]) == 2
           :isosceles
