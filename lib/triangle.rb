@@ -12,6 +12,8 @@ class Triangle
 
   def kind
       case
+      when @sides.count(0) > 0
+          raise TriangleError
       when @sides.count(@side1) == 3
           :equilateral
       when @sides.count(@side1) == 2 || @sides.count(@side2) == 2
