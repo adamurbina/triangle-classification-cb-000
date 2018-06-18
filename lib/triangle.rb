@@ -12,7 +12,7 @@ class Triangle
 
   def kind
       case
-      when @sides
+      when @sides.count(@side1) == 3
           :equilateral
       #when @side1 == @side2 || @side2 == @side3
       end
