@@ -14,7 +14,7 @@ class Triangle
       case
       when @sides.count(@side1) == 3
           :equilateral
-      #when @side1 == @side2 || @side2 == @side3
+      when @sides.count(@side1) == 2 || @sides.count(@side2) == 2
       end
   end
 
