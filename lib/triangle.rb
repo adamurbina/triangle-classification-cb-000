@@ -16,7 +16,7 @@ class Triangle
           raise TriangleError
       when @sides.count(@side1) == 3
           :equilateral
-      when @sides.count(@side1) == 2 || @sides.count(@side2) == 2
+      when @sides.count(@side2) == 2
           :isosceles
       else
           :scalene
